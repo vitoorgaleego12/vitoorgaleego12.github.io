@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Agendamento de Consultas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Consultas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="saude.html">Saúde</a></li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="agendamentos.html">Agendamentos</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+                <li><a href="missao.html">Missão, Visão e Valores</a></li>
+                <li><a href="historia.html">História</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bem-vindo ao Nosso Sistema de Agendamento</h2>
+            <button class="button" onclick="toggleForm()">Agendar Consulta</button>
+
+            <div id="form-container" class="form-container hidden">
+                <h2>Formulário de Agendamento</h2>
+                <form action="#">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="phone">Telefone:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                    
+                    <label for="date">Data:</label><br>
+                    <input type="date" id="date" name="date" required><br><br>
+                    
+                    <label for="time">Hora:</label><br>
+                    <input type="time" id="time" name="time" required><br><br>
+                    
+                    <input type="submit" value="Confirmar Agendamento" class="button">
+                </form>
+            </div>
+
+            <div class="info">
+                <h2>Dicas de Bem-Estar e Saúde</h2>
+                <p>Mantenha-se hidratado, pratique exercícios regularmente e siga uma dieta balanceada para garantir uma boa saúde.</p>
+                <p>Para mais dicas sobre saúde, visite <a href="https://www.abramge.com.br" target="_blank">Abramge</a> ou <a href="https://www.portalmedico.org.br" target="_blank">Portal Médico</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Agendamento de Consultas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
